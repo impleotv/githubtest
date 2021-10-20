@@ -5,7 +5,7 @@ name: CreateRelease
 # Controls when the workflow will run
 on:
   push:
-    branches: [ master ]  
+    #branches: [ master ]  
     tags:
     - '*'
 
@@ -22,7 +22,7 @@ jobs:
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "*.md,*.json"
-        #bodyFile: "body.md"
+        bodyFile: "README.md"
         token: ${{ secrets.TEST_TOKEN }}
      
 
