@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/impleotv/githubtest/compare/v1.0.4...v2.0.0) (2021-10-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* key in config file is now used for extending other config files
+
+### Features
+
+* Commit 5 ([9736a9b](https://github.com/impleotv/githubtest/commit/9736a9b2512fc3d2644a40022355ab3c723e7334))
+
 ### [1.0.4](https://github.com/impleotv/githubtest/compare/v1.0.3...v1.0.4) (2021-10-20)
 
 ### [1.0.3](https://github.com/impleotv/githubtest/compare/v1.0.2...v1.0.3) (2021-10-20)
