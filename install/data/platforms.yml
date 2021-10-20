@@ -1,0 +1,51 @@
+# Platforms 
+platforms:
+
+# First platform 
+  - platform: Legion     
+    active: true
+    name: Legion
+    description: First platform
+    type: Plane
+    sensors:
+      - sensor: EO
+        name: EO
+        description: EO/IR sensor
+        active: true       
+        type: video
+        url: udp://227.1.1.1:30120
+        # trigger events (OR), based on conditions (AND)  
+        # triggers: !!inc/file triggers.yml
+
+      - sensor: Tail1
+        name: Tail1
+        description: Tail camera
+        active: true
+        type: video
+        url: udp://227.1.1.2:30122
+        # triggers: !!inc/file triggers.yml 
+                
+      - sensor: Operator1 
+        name: Operator   
+        active: false         
+        type: video
+        url: udp://227.1.1.3:30123   
+
+      - sensor: Radar1
+        name: Radar
+        active: false     
+        type: video
+        url: udp://227.1.1.4:30124  
+
+# Second platform
+  - platform: Legion2
+    active: false
+    name: Legion 2
+    description: Second platform
+    type: Plane
+    sensors:
+      - sensor: EO2
+        active: true
+        name: EO/IR
+        type: video
+        url: udp://228.1.1.1:1234        

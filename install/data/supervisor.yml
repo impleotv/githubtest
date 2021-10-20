@@ -1,0 +1,37 @@
+# StSupervisor config 
+server:
+    httpPort: 8065
+  
+mqtt:
+  brokerHost: tcp://localhost
+  internal: false
+  port: 1883
+  wsPort: 9001
+  username:
+  password:
+  
+influxdb:
+  # host: 35.178.214.216
+  host:
+  port: 8086
+  username: 
+  password: 
+  database: telegraf
+
+# Stream monitor config 
+streamMonitor:
+  httpStartPort: 4000
+  wsVideoStreamStartPort: 9010
+  bitrateReportingPeriod: 1000
+  metadataSampling: 1000
+  timeout: 1000
+  noSignalAfter: 30000
+  videoBitrate: '1100K'
+  videoResolution: '640x360'     # '960x540', '1280x720'. etc
+
+license:
+  file: StSupervisor-Lenovo.lic
+  key: 022B9FA1-9500AD67-86CAD66D-2A459B66
+  
+  
+  
