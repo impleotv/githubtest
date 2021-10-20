@@ -23,7 +23,7 @@ jobs:
    
       - name: Build project # This would actually build your project, using zip for an example artifact
         run: |
-          tar -czvf stserver-install.tar.gz ./install
+          tar -czvf ./installDist/stserver-install.tar.gz ./install
           ls -la
 
       - name: FTP
@@ -32,7 +32,8 @@ jobs:
           server: ftp.impleotv.com
           username: impleocontent@impleotv.com
           password: ${{ secrets.FTP_IMPLEO_CONTENT }}
-          server-dir: content/stserver2/
+          local-dir: ./installDist/
+          server-dir: stserver2/
    
     # - uses: ncipollo/release-action@v1
     #   with:
