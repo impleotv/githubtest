@@ -25,6 +25,14 @@ jobs:
         run: |
           tar -czvf stserver-install.tar.gz ./install
           ls -la
+
+      - name: FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+          server: ftp.impleotv.com
+          username: impleocontent@impleotv.com
+          password: ${{ secrets.FTP_IMPLEO_CONTENT }}
+          server-dir: content/stserver2/
    
     # - uses: ncipollo/release-action@v1
     #   with:
