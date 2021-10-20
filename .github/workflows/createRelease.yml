@@ -23,7 +23,7 @@ jobs:
       with:
         artifacts: "*.md,*.json"
         #bodyFile: "body.md"
-        #token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.TEST_TOKEN }}
      
 
 
