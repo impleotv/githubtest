@@ -23,6 +23,7 @@ jobs:
    
       - name: Build project # This would actually build your project, using zip for an example artifact
         run: |
+          mkdir installDist
           tar -czvf ./installDist/stserver-install.tar.gz ./install         
           ls -la ./installDist/
 
