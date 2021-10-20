@@ -23,8 +23,8 @@ jobs:
    
       - name: Build project # This would actually build your project, using zip for an example artifact
         run: |
-          tar -czvf ./installDist/stserver-install.tar.gz ./install
-          ls -la
+          tar -czvf ./installDist/stserver-install.tar.gz ./install         
+          ls -la ./installDist/
 
       - name: FTP
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
